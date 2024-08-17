@@ -1,0 +1,22 @@
+---
+version: "3.8"
+services:
+  force:
+{% include 'templates/docker-compose-service-dev.yml.j2' %}
+    env_file:
+      - ../.env.shared
+      - ../.env.development
+      - ../.env
+    command: ["yarn", "start"]
+    ports:
+      - 4000:4000
+    volumes:
+      - ../:/app
+      # prevents bind mount from overwriting node_modules in docker image.
+      - /app/node_modules
+    depends_on:
+      - force-redis
+  force-redis:
+    image: redis:5.0.6-alpine
+    ports:
+      - 6379:6379

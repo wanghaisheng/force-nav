@@ -1,0 +1,73 @@
+.artifact
+.artifacts
+.cache
+.cache-loader
+.DS_Store
+.env
+.env.*
+!.env.development
+.swc/
+.yalc
+*.csv
+*.dat
+*.DS_Store
+*.gz
+*.log
+*.out
+*.pid
+*.projectile
+*.seed
+dump.rdb
+lib-cov
+logs
+manifest.json
+npm-debug.log
+pids
+results
+yalc.lock
+
+/dist
+/node_modules
+/public
+/src/public/assets
+/src/public/assets
+/storybook-static
+node_modules
+
+# Compiled server code
+server.dist.js
+server.dist.js.map
+
+# Test utils
+coverage*
+cypress/screenshots
+.nyc_output
+reports*
+junit.xml
+cypress/videos
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Webpack stats
+stats*.json
+webpack-stats.json
+
+# DLL
+manifest-legacy-artwork-dll.json
+
+# Do not ignore .env.example
+!.env.example
+
+# Intelli
+.idea/
+
+# Hokusai
+.hokusai-tmp/
+
+# Depdency Cruiser
+.dependency-cruiser.js
+depcruiser*
+*.html
+
+size-plugin.json
